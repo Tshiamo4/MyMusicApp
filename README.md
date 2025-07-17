@@ -3,6 +3,21 @@
 
 ## Overview
 This Android application allows users to manage a list of songs, categorized by genre. Users can add songs, view their list, and see songs that have been added multiple times.
+This is a simple Android application that allows users to:
+
+Input song names
+
+Add them to a list
+
+View the list of entered songs on a second screen
+
+The app demonstrates:
+
+Use of EditText, Button, and ListView
+
+Passing data between activities using Intent
+
+Basic Android UI layout with ConstraintLayout
 
 ## Features
 - Add songs to a list
@@ -12,6 +27,12 @@ This Android application allows users to manage a list of songs, categorized by 
 
 ## Screenshots
 1. **Main Screen**: This screen allows users to enter a song name and add it to the list.
+2. MainActivity (First Screen)
+User types a song name into an EditText
+
+Presses "Add" → the song is added to a local songList
+
+Presses "View Songs" → song list is passed to SecondActivity
    ![Main Screen](https://1drv.ms/i/c/733a00f333c6b268/Ec1MsXo-A1BDu4SE_zzDZ_oBxMpYf8PYPIS2ja4XPwNz_g?e=y5kQ0p)
    ![Main Screen](https://1drv.ms/i/c/733a00f333c6b268/EZBm0ujCenxPmbg4ZM1tYQkBPoeQrpxUYI1t5_fAdQhI_g?e=Ba4qXD)
    ![Main Screen](https://1drv.ms/i/c/733a00f333c6b268/ES9LF0ZmtA1Liqu_sWIEYRUBzJQDjViNFnmlPsR_diTcFw?e=jU057S)
@@ -21,6 +42,12 @@ This Android application allows users to manage a list of songs, categorized by 
 
 
 3. **Second Screen**: This screen displays songs that have been added two or more times.
+   SecondActivity (Second Screen)
+Receives the song list via Intent
+
+Presses "Display Song" → list of songs appears in a ListView
+
+Presses "Return" → goes back to MainActivity
    ![Second Screen](https://1drv.ms/i/c/733a00f333c6b268/EarPxA1LcsBNq8SM_GhbZksBL_WfNfU7xIM-BFEQRFM2Xg?e=ccdHpM)
     ![Second Screen](https://1drv.ms/i/c/733a00f333c6b268/EdfBASOCn0lNkQEC-zJBEOkBYH39cuyeoyqOjVr06hdKaA?e=l8EfZZ)
    ![MyMusicAppScreenshot4](https://github.com/user-attachments/assets/8c2239c9-213b-486c-bc1c-cbf4289c3264)
